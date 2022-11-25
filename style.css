@@ -1,0 +1,1534 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+} 
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.box {
+    min-height: 50vh;
+    background-color: rgb(36, 56, 85);
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: relative;
+}
+.link::before {
+    content: "[";
+    position: absolute;
+    left: 22%;
+}
+.link::after {
+    content: "]";
+    position: absolute;
+    right: 22%;
+}
+.link::before,
+.link::after {
+    top: -2px;
+    opacity: 0;
+    transition: 0.3s all linear;
+}
+.link:hover::before{
+    opacity: 1;
+    left: -22%;
+}
+.link:hover::after {
+    opacity: 1;
+    right: -22%;
+}
+/* part-2 */
+.box2 {
+    min-height: 50vh;
+    background-color: orange;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.link2 {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: relative;
+    margin-right: 70px;
+}
+.link2:last-of-type {
+    margin-right: 0;
+}
+.link2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #DB900D;
+    top: 150%;
+    opacity: 0;
+    transition: 0.3s all linear;
+}
+.link2:hover::before{
+    top: 130%;
+    opacity: 1;
+}
+/* part-3 */
+.box3 {
+    min-height: 50vh;
+    background-color: #435A6A;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+}
+.link3 {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: relative;
+}
+.link3::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -15px;
+}
+.link4:hover::before {
+    top: -4px;
+    left: -18px;
+    opacity: 0;
+}
+.link3::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -7px;
+    opacity: 0;
+    transition: 0.3s all linear;
+}
+.link3:hover::after {
+    top: -8px;
+    left: -15px;
+    opacity: 1;
+}
+.link4::before {
+    content: "";
+    position: absolute;
+    border: 2px solid #23303b;
+    padding: 20px 55px;
+    transition: 0.3s all linear;
+}
+.link4::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    padding: 20px 55px;
+}
+.link5::before {
+    content: "";
+    position: absolute;
+    border: 2px solid #23303b;
+    padding: 20px 93px;
+    transition: 0.3s all linear;
+}
+.link5:hover::before {
+    top: -4px;
+    left: -18px;
+    opacity: 0;
+}
+.link5::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    padding: 20px 93px;
+}
+.link6::before {
+    content: "";
+    position: absolute;
+    border: 2px solid #23303b;
+    padding: 20px 82px;
+    transition: 0.3s all linear;
+}
+.link6:hover::before {
+    top: -4px;
+    left: -18px;
+    opacity: 0;
+}
+.link6::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    padding: 20px 82px;
+}
+.link7::before {
+    content: "";
+    position: absolute;
+    border: 2px solid #23303b;
+    padding: 20px 99px;
+    transition: 0.3s all linear;
+}
+.link7:hover::before {
+    top: -4px;
+    left: -18px;
+    opacity: 0;
+}
+.link7::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    padding: 20px 99px;
+}
+.link8::before {
+    content: "";
+    position: absolute;
+    border: 2px solid #23303b;
+    padding: 20px 88px;
+    transition: 0.3s all linear;
+}
+.link8:hover::before {
+    top: -4px;
+    left: -18px;
+    opacity: 0;
+}
+.link8::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    padding: 20px 88px;
+}
+/* part-4 */
+.box4 {
+        min-height: 50vh;
+        background-color: orange;
+        padding: 100px 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+}
+.a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: relative;
+    margin-right: 80px;
+    transition: 0.3s all linear;
+}
+.a:last-of-type {
+    margin-right: 0;
+}
+.a::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    top: 120%;
+    left: 50%;
+    box-shadow: 0 0 0 0.2px #fff; 
+    transition: 0.3s all linear;
+    opacity: 0;
+}
+.a:hover::before {
+    opacity: 1;
+    box-shadow: 13px 0.2px white, -13px 0.2px white; 
+}
+.a:hover {
+    color: #BA781D;
+}
+/* part-5 */
+.box5 {
+    min-height: 50vh;
+    background-color: #0E83CD;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+}
+.link55 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    background-color: #27A0EC;
+    padding: 15px;
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transition: 0.2s all linear;
+}
+.link55::before {
+    position: absolute;
+    background-color: #27A0EC;
+    left: 0;
+    top: 100%;
+    padding: 15px;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+}
+.link55:hover {
+    transform: rotateX(90deg);
+}
+.link56::before {
+    content: "lassitude";
+}
+.link57::before {
+    content: "ratatouille";
+}
+.link58::before {
+    content: "murmurous";
+}
+.link59::before {
+    content: "palimpsest";
+}
+.link50::before {
+    content: "assemblage";
+}
+/* part-6 */
+.box6 {
+    min-height: 50vh;
+    background-color: #3FA46A;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;    
+}
+.link60 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+}
+.link60::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background-color: #fff;
+    top: 110%;
+    left: 0;
+    opacity: 0;
+    transition: 0.20s all linear;
+}
+.link60:hover::before {
+    top: 130%;
+    opacity: 1;
+}
+/* part-7 */
+.box7 {
+    min-height: 50vh;
+    background-color: #0E83CD;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;    
+}
+.link70 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    padding: 13px;
+}
+.link70::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s all linear;
+}
+.link70::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 0;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    transition: 0.3s all linear;
+}
+.link70:hover::before {
+    top: 100%;
+}
+.link70:hover::after {
+    height: 100%;
+}
+/* part-8 */
+.box8 {
+    min-height: 50vh;
+    background-color: #9E487F;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;    
+}
+.link80 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    padding-top: 16px ;
+    padding-bottom: 0;
+}   
+.link80::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #B16D99;
+    top: 0;
+    left: 0;
+    transition: 0.3s all linear;
+}
+.link80::after {
+    content: "Evanescent Life";
+    font-size: 13px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    opacity: 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #5F2B4C;
+    font-style: italic;
+    transition: 0.3s all linear;
+}
+.link80:hover::before {
+    height: 6px;
+    background-color: #fff;
+}
+.link80:hover::after {
+    opacity: 1;
+    padding-bottom: 20px;
+    top: 125%;
+}
+/* part-9 */
+.box9 {
+    min-height: 50vh;
+    background-color: #CD4436;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;    
+}
+.link90 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    padding-top: 16px ;
+    padding-bottom: 0;
+}
+.link90::before,
+.link90::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 52%;
+    top: 68%;
+    opacity: 0; 
+    transition: 0.2s all linear;
+}
+.link90::before {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #B83D30;
+    transform: translate(-50%, -50%) scale(0.7);
+}
+.link90::after {
+    width: 115px;
+    height: 115px;
+    border: 2px solid #B83D30;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+}
+.link90:hover::before,
+.link90:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+/* part-10 */
+.box10 {
+    min-height: 50vh;
+    background-color: #2AC56C;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;    
+}
+.link100 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    color: #229E56;
+}
+.link101::before {
+    content: "desoltury";
+    position: absolute;
+    color: #fff;
+    transition: 0.2s all linear;
+}
+.link102::before {
+    content: "sumptuous";
+    position: absolute;
+    color: #fff;
+    transition: 0.2s all linear;
+}
+.link103::before {
+    content: "scintella";
+    position: absolute;
+    color: #fff;
+    transition: 0.2s all linear;
+}
+.link104::before {
+    content: "propinquity";
+    position: absolute;
+    color: #fff;
+    transition: 0.2s all linear;
+}
+.link105::before {
+    content: "harbinger";
+    position: absolute;
+    color: #fff;
+    transition: 0.2s all linear;
+}
+.link101:hover::before {
+    transform: scale(0.9);
+    opacity: 0;
+}
+.link102:hover::before {
+    transform: scale(0.9);
+    opacity: 0;
+}
+.link103:hover::before {
+    transform: scale(0.9);
+    opacity: 0;
+}
+.link104:hover::before {
+    transform: scale(0.9);
+    opacity: 0;
+}
+.link105:hover::before {
+    transform: scale(0.9);
+    opacity: 0;
+}
+/* part-11 */
+.box11 {
+    min-height: 50vh;
+    background-color: #CD4436;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: sans-serif;    
+}
+.link200 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    width: 19%;
+    letter-spacing: 1px;
+}
+.link201 {
+    color: transparent;
+    overflow: hidden;
+}
+.link201::before {
+    content: "seraglio";
+    position: absolute;
+    color: #fff;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    transition: 0.3s all linear;
+}
+.link201::after {
+    content: "seraglio";
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateY(100%);
+    transition: 0.2s all linear;
+}
+.link201:hover::before {
+    top: -100%;
+}
+.link201:hover::after {
+    transform: translateY(0);
+}
+.link202 {
+    color: transparent;
+    overflow: hidden;
+}
+.link202::before {
+    content: "sumptuous";
+    position: absolute;
+    color: #fff;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    transition: 0.3s all linear;
+}
+.link202::after {
+    content: "sumptuous";
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateY(100%);
+    transition: 0.2s all linear;
+}
+.link202:hover::before {
+    top: -100%;
+}
+.link202:hover::after {
+    transform: translateY(0);
+}
+.link203 {
+    color: transparent;
+    overflow: hidden;
+}
+.link203::before {
+    content: "scintella";
+    position: absolute;
+    color: #fff;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    transition: 0.3s all linear;
+}
+.link203::after {
+    content: "scintella";
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateY(100%);
+    transition: 0.2s all linear;
+}
+.link203:hover::before {
+    top: -100%;
+}
+.link203:hover::after {
+    transform: translateY(0);
+}
+.link204 {
+    color: transparent;
+    overflow: hidden;
+}
+.link204::before {
+    content: "palimpsest";
+    position: absolute;
+    color: #fff;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    transition: 0.3s all linear;
+}
+.link204::after {
+    content: "palimpsest";
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateY(100%);
+    transition: 0.2s all linear;
+}
+.link204:hover::before {
+    top: -100%;
+}
+.link204:hover::after {
+    transform: translateY(0);
+}
+.link205 {
+    color: transparent;
+    overflow: hidden;
+}
+.link205::before {
+    content: "assemblage";
+    position: absolute;
+    color: #fff;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    transition: 0.3s all linear;
+}
+.link205::after {
+    content: "assemblage";
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateY(100%);
+    transition: 0.2s all linear;
+}
+.link205:hover::before {
+    top: -100%;
+}
+.link205:hover::after {
+    transform: translateY(0);
+}
+/* part-12 */
+.box12 {
+    min-height: 50vh;
+    background-color: white;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;    
+}
+.link300 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #566473;
+    font-size: 30px;
+    position: relative;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.link300::before,
+.link300::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #566473;
+    transition: 0.2s all linear;
+    
+}
+.link300:hover::before {
+    transform: scale(1.2);
+}
+.link300:hover::after {
+    top: 0;
+    transform: scale(1.2);
+}
+/* part-13 */
+.box13 {
+    min-height: 50vh;
+    background-color: #16A085;
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link400 {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: transparent;
+    font-size: 28px;
+    position: relative;
+    background-color: #0F7C67;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+/* 1 */
+.link401::before {
+    content: "seraglio";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    color: #0F7C67;
+    background-color: #fff;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link401::after {
+    content: "seraglio";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: #0F7C67;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link401:hover::before {
+    left: 0;
+}
+.link401:hover::after {
+    left: 100%;
+}
+/* 2 */
+.link402::before {
+    content: "sumptuous";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    color: #0F7C67;
+    background-color: #fff;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link402::after {
+    content: "sumptuous";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: #0F7C67;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link402:hover::before {
+    left: 0;
+}
+.link402:hover::after {
+    left: 100%;
+}
+/* 3 */
+.link403::before {
+    content: "scintella";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    color: #0F7C67;
+    background-color: #fff;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link403::after {
+    content: "scintella";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: #0F7C67;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link403:hover::before {
+    left: 0;
+}
+.link403:hover::after {
+    left: 100%;
+}
+/* 4 */
+.link404::before {
+    content: "palimpsest";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    color: #0F7C67;
+    background-color: #fff;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link404::after {
+    content: "palimpsest";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: #0F7C67;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link404:hover::before {
+    left: 0;
+}
+.link404:hover::after {
+    left: 100%;
+}
+/* 5 */
+.link405::before {
+    content: "assemblage";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    color: #0F7C67;
+    background-color: #fff;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link405::after {
+    content: "assemblage";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: #0F7C67;
+    padding: 15px 20px;
+    transition: 0.2s all linear;
+}
+.link405:hover::before {
+    left: 0;
+}
+.link405:hover::after {
+    left: 100%;
+}
+/* part-14 */
+.box14 {
+    min-height: 50vh;
+    background-color: #0E83CD;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;    
+}
+.link500 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0972B4;
+    font-size: 30px;
+    position: relative;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    border-top: 2px solid #0972B4;
+}
+.link501::before {
+    content: "desoltury";
+    position: absolute;
+    width: 0;
+    left: 0;
+    color: #fff;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    transition: 0.3s all linear;
+}
+.link501:hover::before {
+    width: 100%;
+}
+.link502::before {
+    content: "sumptuous";
+    position: absolute;
+    width: 0;
+    left: 0;
+    color: #fff;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    transition: 0.3s all linear;
+}
+.link502:hover::before {
+    width: 100%;
+}
+.link503::before {
+    content: "scintella";
+    position: absolute;
+    width: 0;
+    left: 0;
+    color: #fff;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    transition: 0.3s all linear;
+}
+.link503:hover::before {
+    width: 100%;
+}
+.link504::before {
+    content: "propinquity";
+    position: absolute;
+    width: 0;
+    left: 0;
+    color: #fff;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    transition: 0.3s all linear;
+}
+.link504:hover::before {
+    width: 100%;
+}
+.link505::before {
+    content: "harbinger";
+    position: absolute;
+    width: 0;
+    left: 0;
+    color: #fff;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    transition: 0.3s all linear;
+}
+.link505:hover::before {
+    width: 100%;
+}
+/* part-15 */
+.box15 {
+    min-height: 50vh;
+    padding: 100px;
+    background-color: #435A6B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link600 {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    letter-spacing: 1px;
+}
+.link600::before,
+.link600::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.404);
+    transition: 0.2s all linear;
+}
+.link600::before {
+    width: 2px;
+    left: 0;
+    top: 0;
+}
+.link600::after {
+    width: 2px;
+    right: 0;
+    top: 0;
+}
+.link600:hover::before {
+    left: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    background-color: #fff;
+}
+.link600:hover::after {
+    right: 50%;
+    transform: translateY(50%) rotate(-90deg);
+    background-color: #fff;
+}
+/* part-16 */
+.box16 {
+    min-height: 50vh;
+    padding: 100px;
+    background-color: #AAB7B7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link700 {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-size: 30px;
+    color: #6F868B;
+    position: relative;
+    letter-spacing: 1px;
+}
+.link701::before {
+    content: "languor";
+    position: absolute;
+    color: #fff;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    perspective: 1400px;
+    transform: translate(40px, -18px) rotateX(60deg);
+    opacity: 0;
+    transition: 0.25s all linear;
+}
+.link701:hover::before {
+    opacity: 1;
+    transform: translate(0) rotateX(0);
+}
+.link702::before {
+    content: "murmurous";
+    position: absolute;
+    color: #fff;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    perspective: 1400px;
+    transform: translate(40px, -18px) rotateX(60deg);
+    opacity: 0;
+    transition: 0.25s all linear;
+}
+.link702:hover::before {
+    opacity: 1;
+    transform: translate(0) rotateX(0);
+}
+.link703::before {
+    content: "lassitude";
+    position: absolute;
+    color: #fff;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    perspective: 1400px;
+    transform: translate(40px, -18px) rotateX(60deg);
+    opacity: 0;
+    transition: 0.25s all linear;
+}
+.link703:hover::before {
+    opacity: 1;
+    transform: translate(0) rotateX(0);
+}
+.link704::before {
+    content: "chatoyant";
+    position: absolute;
+    color: #fff;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    perspective: 1400px;
+    transform: translate(40px, -18px) rotateX(60deg);
+    opacity: 0;
+    transition: 0.25s all linear;
+}
+.link704:hover::before {
+    opacity: 1;
+    transform: translate(0) rotateX(0);
+}
+.link705::before {
+    content: "palimpsest";
+    position: absolute;
+    color: #fff;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    perspective: 1400px;
+    transform: translate(40px, -18px) rotateX(60deg);
+    opacity: 0;
+    transition: 0.25s all linear;
+}
+.link705:hover::before {
+    opacity: 1;
+    transform: translate(0) rotateX(0);
+}
+/* part-17 */
+.box17 {
+    min-height: 50vh;
+    padding: 100px;
+    background-color:   #0E83CD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link800 {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    letter-spacing: 1px;
+    transition: 0.3s all linear;
+}
+.link800::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    top: 150%;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s all linear;
+}
+.link800:hover {
+    color: #10649B;
+}
+.link800:hover::before {
+    top: 125%;
+    opacity: 1;
+}
+/* part-18 */
+.box18 {
+    min-height: 50vh;
+    padding: 100px;
+    background-color: #F19F0F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link900 {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #B4770D;
+    position: relative;
+    letter-spacing: 1px;
+    transition: 0.3s all linear;
+}
+.link900::before,
+.link900::after {
+    transition: 0.3s all linear;
+}
+.link900::before {
+    content: "";
+    position: absolute;
+    background-color: #B4770D;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: -13px;
+}
+.link900::after {
+    content: "";
+    position: absolute;
+    background-color: #B4770D;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -13px;
+}
+.link900:hover::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+    left: 50%;
+}
+.link900:hover::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+    left: 50%;
+}
+.link900:hover {
+    color: #fff;
+    font-weight: bold;
+}
+/* part-19 */
+.box19 {
+    min-height: 50vh;
+    padding: 100px;
+    background-color: #CD4436;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link1000 {
+    display: inline-block;
+    text-decoration: none;
+    width: 16%;
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: #E35041;
+    padding: 10px 35px;
+    color: #FFFFFF;
+    position: relative;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transition: 0.3s all linear;
+}
+.link1001::before {
+    content: "desoltury";
+    position: absolute;
+    padding: 10px 35px;
+    background-color: #E35041;
+    top: 0;
+    transform: translateX(70%) rotateY(90deg);
+    transform-origin: left;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+    transition: 0.3s all linear;
+}
+.link1001:hover::before {
+    transform: translateX(0) rotateY(-90px);
+}
+.link1001:hover {
+    transform: translateX(-50%) rotateY(-90deg);
+}
+.link1002::before {
+    content: "sumptuous";
+    position: absolute;
+    padding: 10px 35px;
+    background-color: #E35041;
+    top: 0;
+    transform: translateX(70%) rotateY(90deg);
+    transform-origin: left;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+    transition: 0.3s all linear;
+}
+.link1002:hover::before {
+    transform: translateX(0) rotateY(-90px);
+}
+.link1002:hover {
+    transform: translateX(-50%) rotateY(-90deg);
+}
+.link1003::before {
+    content: "scintella";
+    position: absolute;
+    padding: 10px 35px;
+    background-color: #E35041;
+    top: 0;
+    transform: translateX(70%) rotateY(90deg);
+    transform-origin: left;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+    transition: 0.3s all linear;
+}
+.link1003:hover::before {
+    transform: translateX(0) rotateY(-90px);
+}
+.link1003:hover {
+    transform: translateX(-50%) rotateY(-90deg);
+}
+.link1004::before {
+    content: "propinquity";
+    position: absolute;
+    padding: 10px 35px;
+    background-color: #E35041;
+    top: 0;
+    transform: translateX(70%) rotateY(90deg);
+    transform-origin: left;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+    transition: 0.3s all linear;
+}
+.link1004:hover::before {
+    transform: translateX(0) rotateY(-90px);
+}
+.link1004:hover {
+    transform: translateX(-50%) rotateY(-90deg);
+}
+.link1005::before {
+    content: "harbinger";
+    position: absolute;
+    padding: 10px 35px;
+    background-color: #E35041;
+    top: 0;
+    transform: translateX(70%) rotateY(90deg);
+    transform-origin: left;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+    transition: 0.3s all linear;
+}
+.link1005:hover::before {
+    transform: translateX(0) rotateY(-90px);
+}
+.link1005:hover {
+    transform: translateX(-50%) rotateY(-90deg);
+}
+/* part-20 */
+.box20 {
+    min-height: 50vh;
+    padding: 100px;
+    background-color: #435A6B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link2000 {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: #516A7D;
+    padding: 10px 35px;
+    color: #FFFFFF;
+    position: relative;
+    letter-spacing: 1px;
+    border-top: 10px solid #2F4351;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+}
+.link2001::before {
+    content: "beleaguer";
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 120%;
+    color: #445562;
+    top: -10px;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top;
+    transform: rotateX(270deg);
+    transition: 0.3s all linear;
+}
+.link2001:hover::before {
+    transform: rotateX(0);
+}
+.link2002::before {
+    content: "scintella";
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 120%;
+    color: #445562;
+    top: -10px;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top;
+    transform: rotateX(270deg);
+    transition: 0.3s all linear;
+}
+.link2002:hover::before {
+    transform: rotateX(0);
+}
+.link2003::before {
+    content: "chatoyant";
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 120%;
+    color: #445562;
+    top: -10px;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top;
+    transform: rotateX(270deg);
+    transition: 0.3s all linear;
+}
+.link2003:hover::before {
+    transform: rotateX(0);
+}
+.link2004::before {
+    content: "palimpsest";
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 120%;
+    color: #445562;
+    top: -10px;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top;
+    transform: rotateX(270deg);
+    transition: 0.3s all linear;
+}
+.link2004:hover::before {
+    transform: rotateX(0);
+}
+.link2005::before {
+    content: "languor";
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 120%;
+    color: #445562;
+    top: -10px;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top;
+    transform: rotateX(270deg);
+    transition: 0.3s all linear;
+}
+.link2005:hover::before {
+    transform: rotateX(0);
+}
+/* part-21 */
+.box21 {
+    min-height: 50vh;
+    padding: 100px;
+    background-color: #3FA46A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link3000 {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px 35px;
+    color: #237546;
+    position: relative;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s all linear;
+}
+.link3000:hover {
+    color: #fff;
+}
+.link3000::before, 
+.link3000::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.2s all linear;
+}
+.link3000::before {
+    top: -13px;
+}
+.link3000::after {
+    top: 120%;
+}
+.link3000:hover::before {
+    opacity: 1;
+    top: -7px;
+}
+.link3000:hover::after {
+    opacity: 1;
+    top: 100%;
+}
